@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        @import "index.css";
+
+        .title {
+            color: red;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .title:before {
+            content: '[标题]';
+            color: green;
+            padding-right: 5px
+        }
+    </style>
+</head>
+<body>
+<div class="teach">
+    <p class="title">利用css改变使用角色</p>
+    <p style="display: inline">this is p <em style="display: block">this is em inside p</em>....</p>
+</div>
+
+<div class="teach">
+    <p class="title">类选择器配合元素选择器(p.test)</p>
+    <p class="test">has classname='test' p</p>
+    <div class="test">has classname='test' div</div>
+</div>
+
+<div class="teach">
+    <p class="title">多类选择器,类名连续</p>
+    <p class="test1 test2">matching .test1.test2</p>
+</div>
+
+<div class="teach">
+    <p class="title">属性选择器(4种)</p>
+    <p title>I have title att(简单属性选择)</p>
+    <p class="moon earth">I have class moon and earth（具体属性值选择---完全匹配）</p>
+    <p class="plant1 plant2">I have class plant1 and plant2(部分属性值选择--- 注意如果写成 p[class~="plant"]是匹配不到的，word为单位)</p>
+    <p foo="tt mmm bar">I have attr foo:tt bar [foo*='mm'] 只要属性值包括 </p>
+    <p foo="bar tts">I have attr foo:bar tt [foo^='bar'] 只要属性值以。。。打头</p>
+    <p foo="bar tt">I have attr foo:bar tt [foo$='tt'] 只要属性值以。。。结尾</p>
+</div>
+
+<div class="teach">
+    <p class="title">(元素，类，ID，属性选择器）一些个人想法</p>
+    <p id="combine">, 表示组合 可以用于各种类型的选择器上,此元素命中组合中的ID,下面的名中class</p>
+    <p class="combine">, 表示组合 可以用于各种类型的选择器上,此元素命中组合中的class,上面的名字ID</p>
+    <p id="dot" class="dot">.操作符表示同时关系，id.classname表示两者都要有(此元素都有）</p>
+    <p id="dot">.操作符表示同时关系，id.classname表示两者都要有(此元素仅有ID ）</p>
+</div>
+
+
+<div class="teach">
+    <p class="title">后代选择器(选择的层次是无限的，即应用于所有后代元素 )</p>
+    <ul id="ppp">
+        <li>It's list</li>
+        <li>A right smart list
+            <ol>
+                <li>Within another list
+                    <ul>
+                        <li>this is <em>deep</em></li>
+                        <li>So <em>very</em> deep</li>
+                    </ul>
+                </li>
+                <li>A list of lists to see</li>
+
+            </ol>
+        </li>
+    </ul>
+</div>
+
+<div class="teach">
+    <p class="title">选择子元素 子结合符(">")</p>
+</div>
+
+<div class="teach">
+    <p class="title">相邻兄弟元素 +</p>
+    <div>
+        <div id="div1">div1</div>
+        <div id="div2">div2 #div2+div 只能匹配div2之后的兄弟，并且只匹配一个。比如div1、div4就不能匹配到</div>
+        <div id="div3">div3</div>
+        <div id="div4">div4</div>
+    </div>
+</div>
+
+<div id="title_child" class="teach">
+    <p  class="title">选择第一个元素</p>
+    <ul>
+        <li>first Child</li>
+        <li>Second Child</li>
+    </ul>
+    <ul>
+        <li>first Child</li>
+        <li>Second Child</li>
+    </ul>
+</div>
+
+<div id="fake" class="teach">
+    <p class="title">伪元素选择器</p>
+    <p class="fake1">first letter uppercase</p>
+    <p class="fake2">first line ahskjdhashdkhasdjasdhjkasjdkl asjdajkshdkjashdkjahsd asdjhakjshdkjashdk asd haskjd h</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+.title:after {
+    content: '*'
+}
+
+div.teach {
+    border: 1px solid red;
+    margin-bottom: 2px;
+}
+
+p.test {
+    color: yellow;
+}
+
+.test1.test2 {
+    background-color: silver;
+}
+
+p[title] {
+    font-size: 150%;
+}
+
+p[class="moon earth"] {
+    font-style: italic;
+}
+
+p[class~="plant1"] {
+    color: red;
+}
+
+p[foo*="mm"] {
+    background-color: aqua;
+}
+
+p[foo^="bar"] {
+    background-color: silver;
+
+}
+
+p[foo$="tt"] {
+    background-color: green;
+}
+
+#combine, .combine {
+    background-color: aqua;
+}
+
+#dot.dot {
+    font-weight: bold;
+}
+
+#ppp li em {
+    background-color: yellow;
+}
+
+#ppp ul li {
+    font-style: oblique;
+}
+
+#div2 + div {
+    font-size: 150%;
+}
+
+#title_child ul li:first-child {
+    text-transform: uppercase;
+}
+
+.fake1:first-letter {
+    text-transform: uppercase;
+}
+
+.fake2 {
+    width: 100px;
+}
+
+.fake2:first-line {
+    font-weight: bold;
+}
