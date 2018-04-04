@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS权威指南第七章</title>
+    <style>
+        @import "index.css";
+    </style>
+</head>
+<body>
+<div class="teach">
+    <p class="title">水平格式化</p>
+    <p style="width: 200px;">wideness? width设置内容区宽度</p>
+    <p style="width: 200px;padding: 10px;margin: 20px;">wideness?</p>
+
+</div>
+
+<div class="teach">
+    <p class="title">auto</p>
+    <p class="auto-1">case1 ,有一个auto,另外两个固定值,auto的值为父元素width-固定的两个值</p>
+    <p class="auto-2">case2 ,有两个auto,width固定值时,另外两个值会设置成相等的值</p>
+    <p style="margin-right: 200px;width:auto;margin-left:auto;">width auto时，其他的有则设，不然就是0</p>
+
+    <div style="padding: 30px;background-color: silver">
+        <p style="margin: 20px;padding: 0;background-color: white">a paragraph</p>
+    </div>
+</div>
+
+<div class="teach">
+    <p class="title">垂直格式化</p>
+    <div style="height: 6em">
+        <p style="height: 50%">I'm a paragraph</p>
+    </div>
+
+    <div style="height: auto;background-color: silver">
+        <p style="margin-top:2em;margin-bottom: 2em;">A Paragraph,只有块级子元素，元素的高度=最高块级子元素的外边框(border），到最低块级子元素外边框之间的距离</p>
+        <p style="margin-bottom: 2em;margin-top:1em">hahahah </p>
+    </div>
+
+    <div style="height: auto;border-top: 1px solid;border-bottom: 1px solid;background-color: silver">
+        <p style="margin-top: 2em;margin-bottom: 2em;">testing </p>
+    </div>
+
+    <p>我的理解： 在元素的height为auto的时候，且子元素全是块级元素的时候，元素的高度取决于自己有没有border（当然指top/bottom）
+        ,没有就等于第一个子元素从边框开始算起（border)到最后一个子元素的下边框。如果元素有top border或者bottom border，则相应的包括第一个（最后一个）
+        子元素的margin-top（bottom)属性
+    </p>
+</div>
+
+<div class="teach">
+    <p class="title">行内非替换元素</p>
+    <p style="font-size: 12px;line-height: 12px">
+        this is text,<em>some of which is emphasized</em>,plus other text<br>
+        which is <strong style="font-size: 24px">strongly emphasized</strong> and which is <br>
+        larger than the surrounding text.
+    </p>
+</div>
+
+<div class="teach">
+    <p>border styles </p>
+
+    <div style="margin-bottom:10px;border-style: solid">border style:solid</div>
+    <div style="margin-bottom:10px;border-style: dotted">border style:dotted</div>
+    <div style="margin-bottom:10px;border-style: dashed">border style:dashed</div>
+    <div style="margin-bottom:10px;border-style: double">border style:double</div>
+    <div style="margin-bottom:10px;border-style: groove">border style:groove</div>
+    <div style="margin-bottom:10px;border-style: ridge">border style:ridge</div>
+    <div style="margin-bottom:10px;border-style: inset">border style:inset</div>
+    <div style="margin-bottom:10px;border-style: outset">border style:outset</div>
+</div>
+</body>
+</html>

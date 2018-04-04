@@ -1,0 +1,36 @@
+@import "../common.css";
+
+.indent-1{
+    text-indent: 3em;
+    width:100px;
+}
+
+.indent-2{
+    text-indent: 1em;
+    display: inline-block;
+    border: 1px solid
+}
+
+.line-height-1{
+    font-size: 20px;
+    line-height: 50px;
+}
+
+.vertical-align-1{
+    height: 50px;
+    line-height: 16px;
+    font-size: 16px;
+    border: 1px solid green;
+}
+
+.word-spacing-1{
+    word-spacing: 0.5em;
+}
+
+.word-spacing-2{
+    word-spacing: -3px;
+}
+
+.text-shadow-1{
+    text-shadow: 100px -20px 2px red;
+}

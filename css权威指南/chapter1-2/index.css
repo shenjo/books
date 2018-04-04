@@ -1,11 +1,4 @@
-.title:after {
-    content: '*'
-}
-
-div.teach {
-    border: 1px solid red;
-    margin-bottom: 2px;
-}
+@import "../common.css";
 
 p.test {
     color: yellow;

@@ -1,0 +1,13 @@
+@import "../common.css";
+
+.auto-1 {
+    width: 600px;
+    margin-right: 100px;
+    margin-left: auto;
+}
+
+.auto-2 {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,0 +1,26 @@
+.title {
+    color: red;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.title:before {
+    content: '[标题]';
+    color: green;
+    padding-right: 5px
+}
+
+.title:after {
+    content: '*'
+}
+
+div.teach {
+    border: 1px solid red;
+    margin-bottom: 2px;
+}
+
+.teach p:first-child {
+    color: red;
+    font-weight: bold;
+    font-style: italic;
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Introduction_to_Algorithms",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "ava"
+  },
+  "ava": {
+    "files": [
+      "./tests//**/*.js"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

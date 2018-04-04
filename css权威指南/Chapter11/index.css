@@ -1,0 +1,21 @@
+@import "../common.css";
+
+.separte-demo {
+    border-collapse: separate;
+}
+
+.separte-demo td {
+    border: 3px double black;
+    padding: 3px;
+}
+
+.collapse-demo {
+    border-collapse: collapse;
+    border:3px outset gray;
+    margin: 2em;
+}
+
+.collapse-demo td {
+    border:1px solid gray;
+    padding: 0.5em;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浮动和定位</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="teach">
+    <p>float</p>
+
+    <p>this is the first paragraph</p>
+
+    <p style="float:right;">this is the second paragraph(float)</p>
+
+    <p>this is the third paragraph</p>
+
+</div>
+
+<div class="teach">
+    <p>定位</p>
+
+    <div style="width: 200px;height: 200px;border: 1px solid red;margin: 2px;position: relative">包含块
+        <div style="position: absolute;top: 0;bottom: 0;left: 0;right:50%;background-color: silver;width: 50%;height:100%">绝对定位元素</div>
+
+    </div>
+</div>
+
+<div class="teach">
+    <p>定位</p>
+
+    <div style="width: 200px;height: 200px;border: 1px solid red;margin: 2px;position: relative">包含块
+        <div style="position: absolute;top: 0;bottom: 0;left: 0;right:50%;background-color: silver;width: 50%;height:100%;padding: 2em">绝对定位元素</div>
+    </div>
+</div>
+
+<div class="teach" style="margin-top: 4em;">
+    <p>自动边偏移</p>
+    <p style="width: 200px;">test test test test test test test test test test test test<span>[4]</span> test test test test</p>
+</div>
+
+</body>
+</html>
